@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+    
+<body>
+ <i> <h1>SignUp form</h1></i>
+  <div class="form-container">
+    <form name="registerForm">
+      <label for="firstName">First Name *</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Wriju" required/><p class="error-message"></p>
+
+      <label for="lastName">Last Name *</label>
+      <input type="text" id="lastName" placeholder="Mondal" required/>
+      <p class="error-message"></p>
+
+      <label for="email">Email address *</label>
+      <input type="text" id="e-mail" placeholder="wriju@gmail.com" required/>
+      <p class="error-message"></p>
+      <label for="phoneNumber">Phone Number *</label>
+      <input type="text" id="phoneNumber" maxlength="10" pattern=".{10,}"   required title="10 characters length"placeholder="9999999999"/>
+      <p class="error-message"></p>
+      <label for="password">Password *</label>
+      <input type="password" id="password" pattern=".{8,}"   required title="8 characters minimum"/>
+      <p class="error-message"></p>
+      <p class="password-rules">Your password should contain at least 8 characters and 1 number.</p>
+      
+        <input class="button" type="submit" value="submit" name="submit" onClick="formValidation()" />
+     </form>
+  </div>
+
+  <script src="index.js"></script>
+
+</body> 
+</html>
